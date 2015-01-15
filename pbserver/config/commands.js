@@ -936,12 +936,12 @@ var commands = exports.commands = {
 		);
 	},
 
-	mentoring: 'smogintro',
-	smogonintro: 'smogintro',
-	smogintro: function (target, room, user) {
+	mentoring: 'pbintro',
+	pbintro: 'pbintro',
+	pbintro: function (target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
-			"Welcome to Smogon's official simulator! Here are some useful links to <a href=\"https://www.smogon.com/mentorship/\">Smogon\'s Mentorship Program</a> to help you get integrated into the community:<br />" +
+			"Welcome to Pokebattle's official simulator! Here are some useful links to <a href=\"https://www.smogon.com/mentorship/\">Smogon\'s Mentorship Program</a> to help you get integrated into the community:<br />" +
 			"- <a href=\"https://www.smogon.com/mentorship/primer\">Smogon Primer: A brief introduction to Smogon's subcommunities</a><br />" +
 			"- <a href=\"https://www.smogon.com/mentorship/introductions\">Introduce yourself to Smogon!</a><br />" +
 			"- <a href=\"https://www.smogon.com/mentorship/profiles\">Profiles of current Smogon Mentors</a><br />" +
@@ -954,18 +954,7 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
 			"Pokemon Showdown! damage calculator. (Courtesy of Honko)<br />" +
-			"- <a href=\"https://pokemonshowdown.com/damagecalc/\">Damage Calculator</a>"
-		);
-	},
-
-	cap: function (target, room, user) {
-		if (!this.canBroadcast()) return;
-		this.sendReplyBox(
-			"An introduction to the Create-A-Pokemon project:<br />" +
-			"- <a href=\"https://www.smogon.com/cap/\">CAP project website and description</a><br />" +
-			"- <a href=\"https://www.smogon.com/forums/showthread.php?t=48782\">What Pokemon have been made?</a><br />" +
-			"- <a href=\"https://www.smogon.com/forums/forums/311\">Talk about the metagame here</a><br />" +
-			"- <a href=\"https://www.smogon.com/forums/threads/3512318/#post-5594694\">Sample XY CAP teams</a>"
+			"- <a href=\"http://gamut-was-taken.github.io/\">Damage Calculator</a>"
 		);
 	},
 
