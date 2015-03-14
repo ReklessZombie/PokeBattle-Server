@@ -37,6 +37,10 @@
  *   Used to abstract out network connections. sockets.js handles
  *   the actual server and connection set-up.
  *
+ * Tells - from tells.js
+ * 	
+ *   Handles offline messaging
+ * 
  * @license MIT license
  */
 
@@ -342,6 +346,8 @@ global.CommandParser = require('./command-parser.js');
 global.Simulator = require('./simulator.js');
 
 global.Tournaments = require('./tournaments');
+
+global.Tells = require('./tells.js')
 
 try {
 	global.Dnsbl = require('./dnsbl.js');
