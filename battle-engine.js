@@ -3452,9 +3452,8 @@ Battle = (function () {
 		}
 
 		if (p1switch || p2switch) {
-			if (this.gen <= 1) {
-				// in gen 1, fainting ends the turn; residuals do not happen
-				this.queue = [];
+			if (this.gen >= 5) {
+				this.eacEvent('Update');
 			}
 			this.makeRequest('switch');
 			return true;
