@@ -671,6 +671,8 @@ User = (function () {
 
 			// also MMR is different for each userid
 			this.mmrCache = {};
+			
+			Rooms.global.cancelsearch(this);
 		}
 
 		this.name = name;
